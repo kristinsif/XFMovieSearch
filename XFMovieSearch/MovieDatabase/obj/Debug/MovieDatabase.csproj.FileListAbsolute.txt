@@ -1,0 +1,12 @@
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.csprojResolveAssemblyReference.cache
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.csproj.CoreCompileInputs.cache
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\MovieDatabase.dll.config
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\MovieDatabase.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\MovieDatabase.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\DM.MovieApi.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Newtonsoft.Json.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\DM.MovieApi.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\DM.MovieApi.xml
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Newtonsoft.Json.xml
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.pdb

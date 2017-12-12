@@ -1,0 +1,3 @@
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\MovieDatabase.csproj;neutral
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.UWP\XFMovieSearch.UWP.csproj;x86
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.csproj;neutral
