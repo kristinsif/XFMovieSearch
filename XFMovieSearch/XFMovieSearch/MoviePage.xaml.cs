@@ -7,9 +7,18 @@ namespace XFMovieSearch
 {
     public partial class MoviePage : ContentPage
     {
-        public MoviePage(Movie movie)
+        private MovieDetail _movieDetail;
+        public MoviePage(Movie movie, List<MovieDetail> movieDetailList)
         {
-            this.BindingContext = movie;
+            foreach (var m in movieDetailList)
+            {
+                if (m.Title == movie.Title && movie.Year == m.Year)
+                {
+                    this._movieDetail = m;
+                    break;
+                }
+            }
+            this.BindingContext = this._movieDetail;
             InitializeComponent();
         }
     }

@@ -10,3 +10,11 @@ C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Newtonsoft.Json.xml
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\obj\Debug\MovieDatabase.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\MovieDatabase\bin\Debug\Xamarin.Forms.Xaml.xml

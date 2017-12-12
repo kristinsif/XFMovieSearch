@@ -11,8 +11,8 @@
                   SelectedItem="{Binding SelectedMovie}">
             <ListView.RowHeight>
                 <OnPlatform x:TypeArguments="x:Int32">
-                    <On Platform="iOS">60</On>
-                    <On Platform="Android">60</On>
+                    <On Platform="iOS">80</On>
+                    <On Platform="Android">80</On>
                     <On Platform="UWP">100</On>
                 </OnPlatform>
             </ListView.RowHeight>
@@ -36,8 +36,12 @@
                                    TextColor="#1f03e1" />
                             <Label Grid.Row="1"
                                    Grid.Column="0"
-                                   Text="{Binding Actors}"
+                                   Text="{Binding Actors[0]}"
                                    FontSize="Small"/>
+                            <Image Grid.Row="0"
+                                   Grid.Column="1"
+                                   Grid.RowSpan="2"
+                                   Source="{Binding ImageSource}"/>
 
                         </Grid>
                     </ViewCell>

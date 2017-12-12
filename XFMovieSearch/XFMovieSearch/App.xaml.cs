@@ -16,7 +16,7 @@ namespace XFMovieSearch
             var movieApi = MovieDbFactory.Create<IApiMovieRequest>().Value;
             var movieService = new MovieServices(movieApi);
 
-            MainPage = new NavigationPage(new XFMovieSearchPage(movieService, new List<MovieDatabase.Movie>()));
+            MainPage = new NavigationPage(new XFMovieSearchPage(movieService, new List<MovieDatabase.Movie>(), new List<MovieDetail>()));
         }
 
         protected override void OnStart()

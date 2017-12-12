@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Forms;
 namespace MovieDatabase
 {
     public class MovieDetail
@@ -16,6 +16,7 @@ namespace MovieDatabase
         public string ImageUrl { get; set; }
         public string LocalImagePath { get; set; }
         public string Overview { get; set; }
-    
+        public ImageSource ImageSource => ImageSource.FromUri(new Uri("https://image.tmdb.org/t/p/w500" + this.ImageUrl));
+
     }
 }
