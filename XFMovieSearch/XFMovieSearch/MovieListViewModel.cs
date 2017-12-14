@@ -22,6 +22,8 @@ namespace XFMovieSearch
         {
             this._navigation = navigation;
             this._movieService = movieService;
+
+
         }
 
         public List<Movie> Movie
