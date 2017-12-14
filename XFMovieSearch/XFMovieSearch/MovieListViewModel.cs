@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using MovieDatabase;
 using Xamarin.Forms;
 
@@ -14,14 +15,13 @@ namespace XFMovieSearch
     {
         private INavigation _navigation;
         private Movie _selectedMovie;
-        private List<Movie> _movieList;
-        private List<MovieDetail> _movieDetailList;
+        private List<Movie> _movieList = new List<Movie>();
+        private MovieServices _movieService;
 
-        public MovieListViewModel(INavigation navigation, List<Movie> movieList, List<MovieDetail> movieDetailList)
+        public MovieListViewModel(INavigation navigation, MovieServices movieService)
         {
             this._navigation = navigation;
-            this._movieList = movieList;
-            this._movieDetailList = movieDetailList;
+            this._movieService = movieService;
         }
 
         public List<Movie> Movie
@@ -35,16 +35,7 @@ namespace XFMovieSearch
             }
         }
 
-        public List<MovieDetail> MovieDetail
-        {
-            get => this._movieDetailList;
 
-            set
-            {
-                this._movieDetailList = value;
-                OnPropertyChanged();
-            }
-        }
 
         public Movie SelectedMovie
         {
@@ -55,10 +46,71 @@ namespace XFMovieSearch
                 if (value != null)
                 {
                     this._selectedMovie = value;
-                    this._navigation.PushAsync(new MoviePage(this._selectedMovie, this._movieDetailList), true);
+                    this._navigation.PushAsync(new MoviePage(this._selectedMovie, this._movieService), true);
                 }
             }
         }
+
+
+        /* public async Task<List<Movie>> LoadCast() 
+         {
+             foreach (var movie in this._movieList)
+             {
+                 movie.Actors = await this._movieService.GetActors(movie);
+                 Movie = _movieList;
+             }
+             return this._movieList;
+         }*/
+
+        public async Task LoadCast()
+        {
+            foreach (var movie in Movie)
+            {
+                movie.Actors = await this._movieService.GetActors(movie);
+
+            }
+        }
+
+        public async void LoadTopRatedMovies()
+        {
+
+            Movie = await _movieService.getListOfTopRatedMovies();
+
+        }
+
+        public async void LoadPopularMovies()
+        {
+
+            Movie = await _movieService.getListOfPopularMovies();
+
+        }
+
+        private bool _isRefreshing = false;
+        public bool IsRefreshing
+        {
+            get { return _isRefreshing; }
+            set
+            {
+                _isRefreshing = value;
+                OnPropertyChanged(nameof(IsRefreshing));
+            }
+        }
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(async () =>
+                {
+                    IsRefreshing = true;
+
+                    await LoadCast();
+
+                    IsRefreshing = false;
+                });
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -66,5 +118,6 @@ namespace XFMovieSearch
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
     }
 }

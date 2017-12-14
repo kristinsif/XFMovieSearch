@@ -127,9 +127,9 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"XFMovieSearch.dll",
+		"MovieDatabase.dll",
 		"DM.MovieApi.dll",
 		"Newtonsoft.Json.dll",
-		"MovieDatabase.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

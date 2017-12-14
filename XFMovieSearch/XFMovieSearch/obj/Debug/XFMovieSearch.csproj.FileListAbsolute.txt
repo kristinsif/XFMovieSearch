@@ -25,3 +25,5 @@ C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\obj\Debug\XFMovieSearch.MovieListPage.xaml.g.cs
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\obj\Debug\XFMovieSearch.MoviePage.xaml.g.cs
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\obj\Debug\XFMovieSearch.XFMovieSearchPage.xaml.g.cs
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\obj\Debug\XFMovieSearch.PopularMoviesPage.xaml.g.cs
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch\obj\Debug\XFMovieSearch.TopRatedPage.xaml.g.cs

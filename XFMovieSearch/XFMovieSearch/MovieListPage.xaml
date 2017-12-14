@@ -36,13 +36,12 @@
                                    TextColor="#1f03e1" />
                             <Label Grid.Row="1"
                                    Grid.Column="0"
-                                   Text="{Binding Actors[0]}"
+                                   Text="{Binding Actors}"
                                    FontSize="Small"/>
                             <Image Grid.Row="0"
                                    Grid.Column="1"
                                    Grid.RowSpan="2"
                                    Source="{Binding ImageSource}"/>
-
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

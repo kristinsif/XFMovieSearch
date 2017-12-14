@@ -51,6 +51,7 @@ C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\MovieDatabase.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\DM.MovieApi.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
@@ -59,5 +60,4 @@ C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Text.Encoding.Extensions.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Net.Primitives.dll
-C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\MovieDatabase.dll
 C:\Users\krist\Documents\XFMovieSearch\XFMovieSearch\XFMovieSearch\XFMovieSearch.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll

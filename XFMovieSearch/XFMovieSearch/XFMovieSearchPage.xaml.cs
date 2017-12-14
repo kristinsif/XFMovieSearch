@@ -8,25 +8,23 @@ namespace XFMovieSearch
     public partial class XFMovieSearchPage : ContentPage
     {
         private MovieServices _movieService;
-        private List<Movie> _movieList;
-        private List<MovieDetail> _movieDetailList;
+        private MovieListViewModel _viewModel;
 
-        public XFMovieSearchPage(MovieServices movieService, List<Movie> movieList, List<MovieDetail> movieDetailList)
+        public XFMovieSearchPage(MovieServices movieService)
         {
             this._movieService = movieService;
-            this._movieList = movieList;
-            this._movieDetailList = movieDetailList;
+            this._viewModel = new MovieListViewModel(this.Navigation, this._movieService);
+            this.BindingContext = this._viewModel;
             InitializeComponent();
         }
 
-        private async void GetMoviesButton_OnClicked(object sender, EventArgs e)
+        private async void OnSearchBarButtonPressed(object sender, EventArgs args)
         {
             this.Spinner.IsRunning = true;
-            this._movieList = await _movieService.getListOfMoviesMatchingSearch(MovieEntry.Text);
-            this._movieDetailList = await _movieService.getListOfMovieDetails(this._movieList);
-            await this.Navigation.PushAsync(new MovieListPage(this._movieList, this._movieDetailList));
+            this._viewModel.Movie = await _movieService.getListOfMoviesMatchingSearch(MovieEntry.Text);
+            this._viewModel.LoadCast();
             this.Spinner.IsRunning = false;
-
         }
+
     }
 }

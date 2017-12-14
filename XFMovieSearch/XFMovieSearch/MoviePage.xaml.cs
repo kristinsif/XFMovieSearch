@@ -7,18 +7,21 @@ namespace XFMovieSearch
 {
     public partial class MoviePage : ContentPage
     {
-        private MovieDetail _movieDetail;
-        public MoviePage(Movie movie, List<MovieDetail> movieDetailList)
+        private Movie _movie;
+        private MovieServices _movieService;
+
+        public MoviePage(Movie movie, MovieServices movieService)
         {
-            foreach (var m in movieDetailList)
-            {
-                if (m.Title == movie.Title && movie.Year == m.Year)
-                {
-                    this._movieDetail = m;
-                    break;
-                }
-            }
-            this.BindingContext = this._movieDetail;
+            this._movie = movie;
+            this._movieService = movieService;
+            this.BindingContext = movie;
+            InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            this._movie = await _movieService.getListOfMovieDetails(this._movie);
             InitializeComponent();
         }
     }
