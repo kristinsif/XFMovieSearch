@@ -20,6 +20,9 @@ namespace MovieDatabase
         public string Genres { get; set; }
         public string RunningTime { get; set; }
         public string Overview { get; set; }
+        public string BackdropPath { get; set; }
+        public ImageSource BackdropPathSource => ImageSource.FromUri(new Uri("https://image.tmdb.org/t/p/w500" + this.BackdropPath));
+        public string Tagline { get; set; }
 
     }
 }

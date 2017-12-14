@@ -88,8 +88,6 @@ namespace MovieDatabase
             ApiSearchResponse<MovieInfo> response = await _movieApi.GetPopularAsync();
             foreach (MovieInfo info in response.Results)
             {
-
-
                 responseMovieList.Add(new Movie()
                 {
                     Id = info.Id,
@@ -99,7 +97,6 @@ namespace MovieDatabase
                     Overview = "",
                     RunningTime = "",
                     Genres = ""
-
                 });
             }
 
@@ -148,6 +145,8 @@ namespace MovieDatabase
             movie.Genres = genre;
             movie.Overview = movieDetail.Item.Overview;
             movie.RunningTime = movieDetail.Item.Runtime.ToString() + " min";
+            movie.Tagline = movieDetail.Item.Tagline;
+            movie.BackdropPath = movieDetail.Item.BackdropPath;
 
            // movie.Genre = movieDetail.Item.Genres;
 
@@ -156,8 +155,6 @@ namespace MovieDatabase
 
         public async Task<string> GetActors(Movie movie)
         {
-
-
             ApiQueryResponse<MovieCredit> cast = await _movieApi.GetCreditsAsync(movie.Id);
             string actors = "";
             int number = 3;
@@ -178,8 +175,6 @@ namespace MovieDatabase
 
                 }
             }
-
-
             return actors;
         }
 

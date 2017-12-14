@@ -3,22 +3,26 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="XFMovieSearch.MoviePage">
     <ContentPage.Content>
-       
+
         <Grid Padding="10,10"
               RowSpacing="6">
-
-                <Grid.RowDefinitions>
+            <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="5*"/>
-                </Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="5*"/>
-                </Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
                 <Label Grid.Row="0"
                    Grid.Column="0"
+                       Grid.ColumnSpan="3"
                    Text="{Binding Title}"
                    FontSize="Medium"
                    TextColor="#1f03e1" />
@@ -29,20 +33,32 @@
                    FontSize="Small"/>
                 <Label Grid.Row="1"
                    Grid.Column="1"
+                   Grid.ColumnSpan="2"
                    Text="{Binding Genres}"
                    FontSize="Small"/>
 
                 <Image Grid.Row="2"
                    Grid.Column="0"
-                   Grid.RowSpan="2"
+                   
                    Source="{Binding ImageSource}"/>
            
                 <Label Grid.Row="2"
                    Grid.Column="1"
-             
+                   Grid.ColumnSpan="2"
                    Text="{Binding Overview}"
                    FontSize="Small"/>
-            
+
+            <Image Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"   
+                   Source="{Binding BackdropPathSource}"/>
+
+            <Label Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Text="{Binding Tagline}"
+                   FontSize="Small"/>
+
         </Grid>
        
     </ContentPage.Content>
