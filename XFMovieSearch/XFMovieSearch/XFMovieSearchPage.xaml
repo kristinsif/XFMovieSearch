@@ -3,17 +3,20 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:XFMovieSearch" 
     x:Class="XFMovieSearch.XFMovieSearchPage"
-    Title="Movie search">
+    Title="Movie search"
+    BackgroundColor="Black">
     <ContentPage.Content>
         <StackLayout Margin="20,40,20,20"
                      VerticalOptions="Start"
                      Spacing="10">
             <SearchBar x:Name="MovieEntry" 
                 Placeholder="Search for word in movie"
-                SearchButtonPressed="OnSearchBarButtonPressed"/>
+                SearchButtonPressed="OnSearchBarButtonPressed"
+                BackgroundColor="White"/>
             <ActivityIndicator x:Name="Spinner" 
-                               Color="Red" 
-                               IsRunning="false" />
+                               Color="White" 
+                               IsRunning="false"
+                               Scale="2"/>
             <ListView x:Name="ListView"
                   HasUnevenRows="True"
                   ItemsSource="{Binding Movie}"
@@ -21,7 +24,9 @@
                   SelectedItem="{Binding SelectedMovie}"
                   IsPullToRefreshEnabled="True"
                   RefreshCommand="{Binding RefreshCommand}"
-                  IsRefreshing="{Binding IsRefreshing}">
+                  IsRefreshing="{Binding IsRefreshing}"
+                  ItemSelected="Handle_ItemSelected"
+                  BackgroundColor="Black">
 
                 <ListView.RowHeight>
                     <OnPlatform x:TypeArguments="x:Int32">
@@ -47,11 +52,12 @@
                                    Grid.Column="0"
                                    Text="{Binding Title}"
                                    FontSize="Medium"
-                                   TextColor="#1f03e1" />
+                                   TextColor="White" />
                                 <Label Grid.Row="1"
                                    Grid.Column="0"
                                    Text="{Binding Actors}"
-                                   FontSize="Small"/>
+                                   FontSize="Small"
+                                   TextColor="Silver"/>
                                 <Image Grid.Row="0"
                                    Grid.Column="1"
                                    Grid.RowSpan="2"

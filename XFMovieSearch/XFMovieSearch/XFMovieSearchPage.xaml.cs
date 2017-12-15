@@ -22,8 +22,14 @@ namespace XFMovieSearch
         {
             this.Spinner.IsRunning = true;
             this._viewModel.Movie = await _movieService.getListOfMoviesMatchingSearch(MovieEntry.Text);
-            this._viewModel.LoadCast();
             this.Spinner.IsRunning = false;
+            this._viewModel.Movie = await this._viewModel.LoadCast();
+            InitializeComponent();
+        }
+
+        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            this.ListView.SelectedItem = null;
         }
 
     }

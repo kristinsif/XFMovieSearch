@@ -23,6 +23,16 @@ namespace XFMovieSearch
             this._viewModel.LoadTopRatedMovies();
         }
 
+        void Handle_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            this.ListView.SelectedItem = null;
+        }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            this._viewModel.Movie = await this._viewModel.LoadCast();
+            InitializeComponent();
+        }
     }
 }

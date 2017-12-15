@@ -31,7 +31,7 @@ namespace MovieDatabase
                 foreach (MovieInfo info in response.Results)
                 {
 
-                    responseMovieList.Add(new Movie() { Id = info.Id, Title = $"{info.Title} ({info.ReleaseDate:yyyy})", Actors = "", ImageUrl = info.PosterPath });
+                    responseMovieList.Add(new Movie() { Id = info.Id, Title = $"{info.Title} ({info.ReleaseDate:yyyy})", Actors = "", ImageUrl = info.PosterPath, Overview = info.Overview });
                 }
             }
             return responseMovieList;
@@ -76,7 +76,7 @@ namespace MovieDatabase
             {
 
 
-                responseMovieList.Add(new Movie() { Id = info.Id, Title = $"{info.Title} ({info.ReleaseDate:yyyy})", Actors = "", ImageUrl = info.PosterPath });
+                responseMovieList.Add(new Movie() { Id = info.Id, Title = $"{info.Title} ({info.ReleaseDate:yyyy})", Actors = "", ImageUrl = info.PosterPath, Overview = info.Overview });
             }
 
             return responseMovieList;
@@ -94,7 +94,7 @@ namespace MovieDatabase
                     Title = $"{info.Title} ({info.ReleaseDate:yyyy})",
                     Actors = "",
                     ImageUrl = info.PosterPath,
-                    Overview = "",
+                    Overview = info.Overview,
                     RunningTime = "",
                     Genres = ""
                 });
@@ -143,7 +143,7 @@ namespace MovieDatabase
                 }
             }
             movie.Genres = genre;
-            movie.Overview = movieDetail.Item.Overview;
+         //   movie.Overview = movieDetail.Item.Overview;
             movie.RunningTime = movieDetail.Item.Runtime.ToString() + " min";
             movie.Tagline = movieDetail.Item.Tagline;
             movie.BackdropPath = movieDetail.Item.BackdropPath;
